@@ -1,0 +1,28 @@
+{
+  "name": "front-end-task-avekir",
+  "description": "front-end-task-avekir",
+  "author": "avekir@gmail.com",
+  "version": "0.0.1",
+  "main": "main.js",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-roughly": "^1.0.0",
+    "electron": "3.0.10",
+    "electron-builder": "20.35.0",
+    "mocha": "^6.0.1",
+    "spectron": "^5.0.0",
+    "temp": "^0.9.0"
+  },
+  "dependencies": {
+    "jquery": "3.1.1",
+    "node-gyp": "^3.8.0"
+  },
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "start": "electron main.js",
+    "test": "electron ./test/main-test.js"
+  }
+}
